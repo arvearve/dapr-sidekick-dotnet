@@ -67,7 +67,7 @@ namespace Man.Dapr.Sidekick.Process
                         RedirectStandardOutput = true,
                         RedirectStandardError = true,
                         RedirectStandardInput = true,
-                        WorkingDirectory = Path.GetDirectoryName(filename)
+                        WorkingDirectory = Environment.CurrentDirectory
                     };
 
                     // Add environment variables
